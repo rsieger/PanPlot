@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SetXAxisOptionsDateTimeDialog</class>
+ <widget class="QDialog" name="SetXAxisOptionsDateTimeDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>386</width>
+    <height>359</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>X-Axis options</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="1" column="0">
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Date/Time format</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QRadioButton" name="Year_radioButton">
+        <property name="text">
+         <string>yyyy</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QRadioButton" name="YearMonth_radioButton">
+        <property name="text">
+         <string>yyyy-MM</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QRadioButton" name="IsoDate_radioButton">
+        <property name="text">
+         <string>yyyy-MM-dd</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QRadioButton" name="IsoDateTime_radioButton">
+        <property name="text">
+         <string>yyyy-MM-dd'T'hh:mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QRadioButton" name="IsoDateTimeSecs_radioButton">
+        <property name="text">
+         <string>yyyy-MM-dd'T'hh:mm:ss</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Range</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="0">
+       <widget class="QLabel" name="GraphicMinimum_label">
+        <property name="text">
+         <string>    Minimum:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="2">
+       <widget class="QDateTimeEdit" name="GraphicMinimum_DateTimeEdit"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="GraphicMaximum_label">
+        <property name="text">
+         <string>    Maximum:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" colspan="2">
+       <widget class="QDateTimeEdit" name="GraphicMaximum_DateTimeEdit"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="TickmarkSpacing_label">
+        <property name="text">
+         <string>    Tickmark spacing:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="TickmarkSpacing_lineEdit"/>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>day(s)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QCheckBox" name="useManualScaleSettings_checkBox">
+        <property name="text">
+         <string>manually</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <layout class="QHBoxLayout">
+     <item>
+      <spacer>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="OK_pushButton">
+       <property name="text">
+        <string>&amp;OK</string>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Cancel_pushButton">
+       <property name="text">
+        <string>&amp;Cancel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>useManualScaleSettings_checkBox</tabstop>
+  <tabstop>GraphicMinimum_DateTimeEdit</tabstop>
+  <tabstop>GraphicMaximum_DateTimeEdit</tabstop>
+  <tabstop>TickmarkSpacing_lineEdit</tabstop>
+  <tabstop>Year_radioButton</tabstop>
+  <tabstop>YearMonth_radioButton</tabstop>
+  <tabstop>IsoDate_radioButton</tabstop>
+  <tabstop>IsoDateTime_radioButton</tabstop>
+  <tabstop>IsoDateTimeSecs_radioButton</tabstop>
+  <tabstop>OK_pushButton</tabstop>
+  <tabstop>Cancel_pushButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
