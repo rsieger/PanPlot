@@ -4,7 +4,7 @@ echo PanPlot2
 
 echo - macdeployqt 
 
-cd ~/Development/aforge/panplot2
+cd ~/Development/GitHub/PanPlot
 
 rm -R '../../Distribution/PanPlot2/PanPlot2.app'
 cp -R './PanPlot2-build-Desktop_Qt_5_3_2_LLDB-Release/PanPlot2.app' '../../Distribution/PanPlot2/PanPlot2.app'
