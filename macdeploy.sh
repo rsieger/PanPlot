@@ -7,7 +7,7 @@ echo - macdeployqt
 cd ~/Development/GitHub/PanPlot
 
 rm -R '../../Distribution/PanPlot2/PanPlot2.app'
-cp -R './build-PanPlot2-Desktop_Qt_5_4_1_clang_64bit-Release/PanPlot2.app' '../../Distribution/PanPlot2/PanPlot2.app'
+cp -R './build-PanPlot2-Desktop_Qt_5_4_2_clang_64bit-Release/PanPlot2.app' '../../Distribution/PanPlot2/PanPlot2.app'
 cp './trunk/Resources/Info.plist' '../../Distribution/PanPlot2/PanPlot2.app/Contents/Info.plist'
 
 /Developer/Qt/5.4/clang_64/bin/macdeployqt '../../Distribution/PanPlot2/PanPlot2.app'
