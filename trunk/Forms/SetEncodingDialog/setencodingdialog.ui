@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>General options</string>
+   <string>Set encoding</string>
   </property>
   <property name="sizeGripEnabled">
    <bool>true</bool>

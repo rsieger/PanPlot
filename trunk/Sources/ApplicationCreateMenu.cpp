@@ -64,8 +64,8 @@ void MainWindow::createActions()
     reloadFileAction->setShortcut(tr("Ctrl+R"));
     connect(reloadFileAction, SIGNAL(triggered()), this, SLOT(doReloadFile()));
 
-    setEncodingDialogAction = new QAction(tr("Set &encoding"), this);
-    setEncodingDialogAction->setShortcut(tr("Ctrl+E"));
+    setEncodingDialogAction = new QAction(tr("Set encoding..."), this);
+    setEncodingDialogAction->setShortcut(tr("Ctrl+,"));
     connect(setEncodingDialogAction, SIGNAL(triggered()), this, SLOT(doSetEncodingDialog()));
 
     exitAction = new QAction(tr("&Quit"), this);
