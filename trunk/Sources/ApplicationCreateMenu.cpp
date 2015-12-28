@@ -292,3 +292,27 @@ void MainWindow::createMenus()
     helpMenu->addSeparator();
     helpMenu->addAction( showHelpAction );
 }
+
+// **********************************************************************************************
+// **********************************************************************************************
+// **********************************************************************************************
+
+void MainWindow::enableMenuItems( const QStringList sl_FilenameList )
+{
+    bool b_containsBinaryFile = containsBinaryFile( sl_FilenameList );
+
+// **********************************************************************************************
+
+    QList<QAction*> showMenuActions = showMenu->actions();
+
+    if ( b_containsBinaryFile == false )
+    {
+        for ( int i=0; i<showMenuActions.count(); ++i )
+            showMenuActions.at( i )->setEnabled( true );
+    }
+    else
+    {
+        for ( int i=0; i<showMenuActions.count(); ++i )
+            showMenuActions.at( i )->setEnabled( false );
+    }
+}
