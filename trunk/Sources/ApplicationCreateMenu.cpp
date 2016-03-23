@@ -70,7 +70,7 @@ void MainWindow::createActions()
 
     exitAction = new QAction(tr("&Quit"), this);
     exitAction->setShortcut(tr("Ctrl+Q"));
-    connect(exitAction, SIGNAL(triggered()), this, SLOT(close()));
+    connect(exitAction, SIGNAL(triggered()), this, SLOT(exitApplication()));
 
     // Show menu
     showPlotVAction = new QAction(tr("Data plot &vertical"), this);
@@ -239,15 +239,8 @@ void MainWindow::createMenus()
     fileMenu->addAction( saveParameterStatisticTextAction ); saveParameterStatisticTextAction->setEnabled( false );
     fileMenu->addAction( saveParameterStatisticPDFAction ); saveParameterStatisticPDFAction->setEnabled( false );
 
-#if defined(Q_OS_LINUX)
     fileMenu->addSeparator();
     fileMenu->addAction( exitAction );
-#endif
-
-#if defined(Q_OS_WIN)
-    fileMenu->addSeparator();
-    fileMenu->addAction( exitAction );
-#endif
 
 // **********************************************************************************************
 
