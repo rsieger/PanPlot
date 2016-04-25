@@ -52,7 +52,7 @@ cd '/Volumes/PanPlot'
 rm -rf .fseventsd
 mkdir .fseventsd
 touch .fseventsd/no_log
-cd ~/Development/Distribution
+cd ~/Development/Distribution/PanPlot2
 
 echo - verify package
 
@@ -60,3 +60,11 @@ codesign -d '/Volumes/PanPlot/PanPlot2.app'
 
 echo
 hdiutil detach '/Volumes/PanPlot'
+
+echo - move application
+
+rm -R /Applications/PanPlot2.app
+cp -R PanPlot2.app /Applications
+cd ~/Development/Distribution
+
+echo - finished
