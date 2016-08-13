@@ -52,7 +52,7 @@ public:
 
     void setParameterNameOrientation( const int val ) { parameterNameOrientation = val; }
     void setPlotOrientation( const int var ) { plotOrientation = var; }
-    void setFilenamePlot( const QString& var ) { filenameplot = var; }
+    void setFilenamePlot( const QString &var ) { filenameplot = var; }
 
     void setHeaderTextFont( const QFont val ) { fontHeaderText = val; }
     void setHeaderTextColor( const QColor val ) { colorHeaderText = val; }
