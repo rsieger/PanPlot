@@ -7,7 +7,7 @@
     const QString _PROGRAMDOI_            = "doi:10.1594/PANGAEA.816201";
     const QString _PROGRAMREADME_         = "https://wiki.pangaea.de/wiki/PanPlot";
 
-    const QString _VERSION_               = "14.4";     // Version number, 2015-12-28
+    const QString _VERSION_               = "14.5";     // Version number, 2016-08-28
     const QString _DATAFORMATVERSION_     = "1.2";      // Data format version, 2013-10-12
     const QChar   _PSEPARATOR_            = '|';
 

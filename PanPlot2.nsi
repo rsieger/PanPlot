@@ -2,7 +2,7 @@
 
 ; HM NIS Edit Wizard helper defines
 !define PRODUCT_NAME "PanPlot2"
-!define PRODUCT_VERSION "14.4"
+!define PRODUCT_VERSION "14.5"
 !define PRODUCT_PUBLISHER "PANGAEA"
 !define PRODUCT_WEB_SITE "http://www.pangaea.de"
 !define PRODUCT_DIR_REGKEY "Software\Microsoft\Windows\CurrentVersion\App Paths\PanPlot2.exe"
@@ -48,6 +48,7 @@ RequestExecutionLevel admin
 Section "MainSection" SEC01
   SetOutPath "$INSTDIR"
   File "C:\Users\rsieger\Documents\Development\Distribution\PanPlot2\PanPlot2.exe"
+  File "C:\Users\rsieger\Documents\Development\Distribution\PanPlot2\curl.exe"
   File "C:\Users\rsieger\Documents\Development\Distribution\PanPlot2\Qt5Core.dll"
   File "C:\Users\rsieger\Documents\Development\Distribution\PanPlot2\Qt5Gui.dll"
   File "C:\Users\rsieger\Documents\Development\Distribution\PanPlot2\Qt5Network.dll"
@@ -57,8 +58,6 @@ Section "MainSection" SEC01
   File "C:\Users\rsieger\Documents\Development\Distribution\PanPlot2\libgcc_s_dw2-1.dll"
   File "C:\Users\rsieger\Documents\Development\Distribution\PanPlot2\libstdc++-6.dll"
   File "C:\Users\rsieger\Documents\Development\Distribution\PanPlot2\libwinpthread-1.dll"
-  File "C:\Users\rsieger\Documents\Development\Distribution\PanPlot2\libeay32.dll"
-  File "C:\Users\rsieger\Documents\Development\Distribution\PanPlot2\ssleay32.dll"
 
   SetOutPath "$INSTDIR\platforms"
   File "C:\Users\rsieger\Documents\Development\Distribution\PanPlot2\platforms\qminimal.dll"
@@ -109,6 +108,7 @@ FunctionEnd
 
 Section Uninstall
   Delete "$INSTDIR\PanPlot2.exe"
+  Delete "$INSTDIR\curl.exe"
   Delete "$INSTDIR\Qt5Core.dll"
   Delete "$INSTDIR\Qt5Gui.dll"
   Delete "$INSTDIR\Qt5Network.dll"
@@ -118,8 +118,6 @@ Section Uninstall
   Delete "$INSTDIR\libgcc_s_dw2-1.dll"
   Delete "$INSTDIR\libstdc++-6.dll"
   Delete "$INSTDIR\libwinpthread-1.dll"
-  Delete "$INSTDIR\libeay32.dll"
-  Delete "$INSTDIR\ssleay32.dll"
   Delete "$INSTDIR\platforms\qminimal.dll"
   Delete "$INSTDIR\platforms\qwindows.dll"
   Delete "$INSTDIR\uninst.exe"
