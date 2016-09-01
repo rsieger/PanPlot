@@ -58,6 +58,7 @@ Section "MainSection" SEC01
   File "C:\Users\rsieger\Documents\Development\Distribution\PanPlot2\libgcc_s_dw2-1.dll"
   File "C:\Users\rsieger\Documents\Development\Distribution\PanPlot2\libstdc++-6.dll"
   File "C:\Users\rsieger\Documents\Development\Distribution\PanPlot2\libwinpthread-1.dll"
+  File "C:\Users\rsieger\Documents\Development\Distribution\PanPlot2\curl-ca-bundle.crt"
 
   SetOutPath "$INSTDIR\platforms"
   File "C:\Users\rsieger\Documents\Development\Distribution\PanPlot2\platforms\qminimal.dll"
@@ -129,6 +130,7 @@ Section Uninstall
   Delete "$INSTDIR\Examples\Demo2.txt"
   Delete "$INSTDIR\Examples\Demo3.txt"
   Delete "$INSTDIR\Examples\Demo4.txt"
+  Delete "$INSTDIR\curl-ca-bundle.crt"
 
   Delete "$SMPROGRAMS\PANGAEA\PanPlot2\Uninstall.lnk"
   Delete "$SMPROGRAMS\PANGAEA\PanPlot2\PanPlot2.lnk"
