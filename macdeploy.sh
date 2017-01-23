@@ -7,10 +7,10 @@ echo - macdeployqt
 cd ~/Development/GitHub/PanPlot
 
 rm -R '../../Distribution/PanPlot2/PanPlot2.app'
-cp -R './build-PanPlot2-Desktop_Qt_5_7_1_clang_64bit-Release/PanPlot2.app' '../../Distribution/PanPlot2/PanPlot2.app'
+cp -R './build-PanPlot2-Desktop_Qt_5_8_0_clang_64bit-Release/PanPlot2.app' '../../Distribution/PanPlot2/PanPlot2.app'
 cp './trunk/Resources/Info.plist' '../../Distribution/PanPlot2/PanPlot2.app/Contents/Info.plist'
 
-/Developer/Qt/5.7/clang_64/bin/macdeployqt '../../Distribution/PanPlot2/PanPlot2.app'
+/Developer/Qt/5.8/clang_64/bin/macdeployqt '../../Distribution/PanPlot2/PanPlot2.app'
 
 echo - code signing
 
@@ -23,7 +23,6 @@ codesign --force --verify --sign 'Developer ID Application: Alfred-Wegener-Insti
 
 codesign --force --verify --sign 'Developer ID Application: Alfred-Wegener-Institut fur Polar- und Meeresforschung (AWI)' '../../Distribution/PanPlot2/PanPlot2.app/Contents/PlugIns/bearer/libqcorewlanbearer.dylib'
 codesign --force --verify --sign 'Developer ID Application: Alfred-Wegener-Institut fur Polar- und Meeresforschung (AWI)' '../../Distribution/PanPlot2/PanPlot2.app/Contents/PlugIns/bearer/libqgenericbearer.dylib'
-codesign --force --verify --sign 'Developer ID Application: Alfred-Wegener-Institut fur Polar- und Meeresforschung (AWI)' '../../Distribution/PanPlot2/PanPlot2.app/Contents/PlugIns/imageformats/libqdds.dylib'
 codesign --force --verify --sign 'Developer ID Application: Alfred-Wegener-Institut fur Polar- und Meeresforschung (AWI)' '../../Distribution/PanPlot2/PanPlot2.app/Contents/PlugIns/imageformats/libqgif.dylib'
 codesign --force --verify --sign 'Developer ID Application: Alfred-Wegener-Institut fur Polar- und Meeresforschung (AWI)' '../../Distribution/PanPlot2/PanPlot2.app/Contents/PlugIns/imageformats/libqicns.dylib'
 codesign --force --verify --sign 'Developer ID Application: Alfred-Wegener-Institut fur Polar- und Meeresforschung (AWI)' '../../Distribution/PanPlot2/PanPlot2.app/Contents/PlugIns/imageformats/libqico.dylib'
